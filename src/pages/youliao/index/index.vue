@@ -44,11 +44,14 @@ export default {
   display: flex;
   flex-direction: row;
   color: #979898;
+  height: 100%;
   .sidebar {
     width: 15%;
   }
   .content {
     width: 85%;
+    height: 100%;
+    background: rgb(246, 246, 246);
     .top-header {
       height: 60px;
       line-height: 60px;
