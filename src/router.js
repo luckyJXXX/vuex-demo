@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Home = () => import('@/pages/home')
+const Index = () => import('@/pages/youliao/index')
+const Channel = () => import('@/pages/youliao/channel')
+const Feed = () => import('@/pages/youliao/feed')
 
 Vue.use(Router)
 
@@ -9,8 +11,17 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: '首页',
-      component: Home
+      name: '频道',
+      component: Index
+    },
+    {
+      path: '/channel',
+      name: '频道',
+      component: Channel
+    }, {
+      path: '/feed',
+      name: '频道',
+      component: Feed
     }
   ]
 })
