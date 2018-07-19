@@ -1,18 +1,21 @@
 <template>
-  <div class="index-wrapper">
-    <div class="sidebar">
-      <Siderbar></Siderbar>
-    </div>
-    <div class="content">
-      <div class="top-header">
-        <Topheader></Topheader>
-      </div>
-      <!-- 有料帖子 -->
-      <Feed ref="feed" v-if="!showFeed"></Feed>
+  <el-container class="container">
+  <el-aside width="250px">
+    <Siderbar></Siderbar>
+  </el-aside>
+  <el-container>
+    <el-header>
+      <Topheader></Topheader>
+    </el-header>
+    <el-main>
       <!-- 有料频道 -->
-      <Channel ref="channel" v-else></Channel>
-    </div>
-  </div>
+      <!-- <Channel></Channel> -->
+      <!-- 有料帖子 -->
+      <Feed></Feed>
+    </el-main>
+  </el-container>
+</el-container>
+
 </template>
 
 <script>
@@ -40,25 +43,26 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.index-wrapper {
-  display: flex;
-  flex-direction: row;
-  color: #979898;
-  // height: 100%;
-  .sidebar {
-    width: 15%;
+  .el-header, .el-footer {
+    line-height: 60px;
   }
-  .content {
-    width: 85%;
-    // height: 100%;
-    background: rgb(246, 246, 246);
-    .top-header {
-      height: 60px;
-      line-height: 60px;
-      width: 100%;
-    }
-    
+  
+  .el-aside {
+    background-color: 666666;
+    color: #333;
+    text-align: center;
   }
-}
+  
+  .el-main {
+    background-color: #F6F6F6;
+    color: #333;
+  }
+  
+  body > .el-container {
+    margin-bottom: 40px;
+  }
+  .container {
+    height: 100%;
+  }
 </style>
 

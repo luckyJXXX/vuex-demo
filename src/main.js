@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-import './assets/style/common.css'
+import './assets/style/common.less'
 import './assets/style/reset.less'
 import router from './router'
 import store from './store'

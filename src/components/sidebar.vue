@@ -9,8 +9,7 @@
         <el-menu default-active="1" class="el-menu-vertical-demo" 
          @open="handleOpen"
         @close="handleClose" 
-        background-color="#666666" 
-        active-background-color="#FDDB00"
+        background-color="#FDDB00" 
         active-text-color="#333"
         text-color="#fff" style="border-right: none;">
           <el-menu-item index="1" class="index">
@@ -52,7 +51,7 @@
 <style lang="less" scoped>
   .side-bar {
     width: 100%;
-    background: #666666;
+    background: #3F3F3F;
     height: 100%;
     color: #fff;
     .logo {
@@ -61,7 +60,7 @@
         height: 50px;
       }
       >span {
-        font-size: 20px;
+        font-size: 24px;
         margin-left: 6px;
       }
     }
