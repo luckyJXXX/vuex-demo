@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-dialog title="收货地址" :visible.sync="dialogFormVisible">
+    <el-dialog title="收货地址" :visible="visible" :before-close="close">
       <el-form :model="form">
         <el-form-item label="活动名称" :label-width="formLabelWidth">
           <el-input v-model="form.name" auto-complete="off"></el-input>
@@ -24,7 +24,10 @@
 <script>
   export default {
     props: {
-      dialogFormVisible: false
+      visible: {
+        type: Boolean,
+        default: false
+      }
     },
     data() {
       return {
@@ -61,15 +64,21 @@
       };
     },
     created() {
-      console.log('121231-----', this.showDialog)
+
     },
   
     mounted() {
       console.log('mounted--', this.showDialog)
     },
     methods: {
+      open() {
+        this.visible = true
+      },
+      close2() {
+        this.visible = false
+      },
       close() {
-        this.dialogFormVisible = false
+        this.$emit('update:visible', false)
       }
     }
   };

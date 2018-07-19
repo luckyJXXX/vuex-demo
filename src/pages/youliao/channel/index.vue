@@ -5,7 +5,8 @@
         <div class="search">
           <div class="search-tiezi">
             <span>搜索贴近号</span>
-            <input type="text" placeholder="请输入帖子名称">
+            <input type="text" placeholder="请输入帖子名称" />
+            <i class="el-icon-search"></i>
           </div>
           <div class="create-bind" @click="openDialog">新建绑定</div>
         </div>
@@ -41,7 +42,7 @@
         </div>
     
       </div>
-       <Dialog ref="dialog" :dialogFormVisible="dialogFormVisible"></Dialog>
+       <Dialog ref="dialog" v-if="dialogVisible" :visible.sync="dialogVisible"></Dialog>
 </div>
       
      
@@ -60,7 +61,7 @@
     },
     data() {
       return {
-        dialogFormVisible: false,
+        dialogVisible: false,
         value13: [],
         currentPage1: 5,
         currentPage2: 5,
@@ -240,7 +241,7 @@
         console.log(`当前页: ${val}`);
       },
       openDialog() {
-        this.dialogFormVisible = true;
+        this.dialogVisible = true;
       }
     },
   

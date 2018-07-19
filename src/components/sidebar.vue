@@ -14,11 +14,11 @@
         active-text-color="#333"
         text-color="#fff" style="border-right: none;">
           <el-menu-item index="1" class="index">
-            <i class="el-icon-menu"></i>
+            <i class="el-icon-setting"></i>
             <span slot="title" >有料帖子</span>
           </el-menu-item>
           <el-menu-item index="2" class="index">
-            <i class="el-icon-document"></i>
+            <i class="el-icon-menu"></i>
             <span slot="title">有料频道</span>
           </el-menu-item>
         </el-menu>
