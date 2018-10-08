@@ -1,27 +1,36 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Index = () => import('@/pages/youliao/index')
-const Channel = () => import('@/pages/youliao/channel')
-const Feed = () => import('@/pages/youliao/feed')
+// const Index = () => import('@/pages/youliao/index')
+// const Channel = () => import('@/pages/youliao/channel')
+// const Feed = () => import('@/pages/youliao/feed')
+
+// vue
+const Index = () => import('@/pages/vue/index')
 
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
+    // {
+    //   path: '/',
+    //   name: '频道',
+    //   component: Index
+    // },
+    // {
+    //   path: '/channel',
+    //   name: '频道',
+    //   component: Channel
+    // }, {
+    //   path: '/feed',
+    //   name: '频道',
+    //   component: Feed
+    // }
     {
       path: '/',
-      name: '频道',
+      name: '导航',
       component: Index
-    },
-    {
-      path: '/channel',
-      name: '频道',
-      component: Channel
-    }, {
-      path: '/feed',
-      name: '频道',
-      component: Feed
     }
   ]
 })
