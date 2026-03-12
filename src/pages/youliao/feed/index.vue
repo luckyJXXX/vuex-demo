@@ -47,81 +47,81 @@
     </el-pagination>
   </div>
         </div>
-    
+
       </div>
 </template>
 
 <script>
-  import Siderbar from "../../../components/sidebar";
-  import Topheader from "../../../components/topheader";
-  export default {
-    name: "feed",
-    components: {
-      Siderbar,
-      Topheader
-    },
-    data() {
-      return {
-        value13: [],
-        currentPage1: 5,
-        currentPage2: 5,
-        currentPage3: 5,
-        currentPage4: 4,
-        tableData: [{
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          },
-          {
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          },
-          {
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          },
-          {
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          },
-          {
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          },
-          {
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          },
-          {
-            name: "严夫人传",
-            source: "政治频道",
-            feedId: "知事局",
-            time: "2018-05-23 16:23"
-          }
-        ]
-      };
-    },
-    methods: {
-      handleClick(row) {
-        console.log(row);
+import Siderbar from '../../../components/sidebar.vue'
+import Topheader from '../../../components/topheader.vue'
+export default {
+  name: 'feed',
+  components: {
+    Siderbar,
+    Topheader
+  },
+  data () {
+    return {
+      value13: [],
+      currentPage1: 5,
+      currentPage2: 5,
+      currentPage3: 5,
+      currentPage4: 4,
+      tableData: [{
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
       },
-      handleSizeChange(val) {
-        console.log(`每页 ${val} 条`);
+      {
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
       },
-      handleCurrentChange(val) {
-        console.log(`当前页: ${val}`);
+      {
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
+      },
+      {
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
+      },
+      {
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
+      },
+      {
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
+      },
+      {
+        name: '严夫人传',
+        source: '政治频道',
+        feedId: '知事局',
+        time: '2018-05-23 16:23'
       }
+      ]
     }
-  };
+  },
+  methods: {
+    handleClick (row) {
+      console.log(row)
+    },
+    handleSizeChange (val) {
+      console.log(`每页 ${val} 条`)
+    },
+    handleCurrentChange (val) {
+      console.log(`当前页: ${val}`)
+    }
+  }
+}
 </script>

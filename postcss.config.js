@@ -1,17 +1,10 @@
-var postcssPr = require('postcss-pr');
-var postcssImport = require('postcss-import');
-var cssnext = require("postcss-cssnext")
-
-module.exports = {
-    plugins: [
-        postcssImport,
-        cssnext({
-            features: {
-                rem: false
-            }
-        }),
-        postcssPr({
-            fontSize: 32
-        })
-    ]
+export default {
+  plugins: {
+    'postcss-import': {},
+    'postcss-nested': {},
+    'postcss-pxtorem': {
+      rootValue: 32,
+      propList: ['*']
+    }
+  }
 }

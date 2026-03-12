@@ -43,24 +43,24 @@
     </el-pagination>
   </div>
         </div>
-    
+
       </div>
        <Dialog ref="dialog" v-if="dialogVisible" :visible.sync="dialogVisible"></Dialog>
 </div>
 </template>
 
 <script>
-import Siderbar from "../../../components/sidebar";
-import Topheader from "../../../components/topheader";
-import Dialog from "../../../components/dialog";
+import Siderbar from '../../../components/sidebar.vue'
+import Topheader from '../../../components/topheader.vue'
+import Dialog from '../../../components/dialog.vue'
 export default {
-  name: "feed",
+  name: 'feed',
   components: {
     Siderbar,
     Topheader,
     Dialog
   },
-  data() {
+  data () {
     return {
       dialogVisible: false,
       value13: [],
@@ -70,64 +70,63 @@ export default {
       currentPage4: 4,
       tableData: [
         {
-          name: "教务所",
-          feedId: "政治频道",
-          channelName: "知事局",
-          channelId: "1234567",
-          time: "2018-05-23 16:23"
+          name: '教务所',
+          feedId: '政治频道',
+          channelName: '知事局',
+          channelId: '1234567',
+          time: '2018-05-23 16:23'
         },
         {
-          name: "知识局",
-          feedId: "政治频道",
-          channelName: "知事局",
-          channelId: "1234567",
-          time: "2018-05-23 16:23"
+          name: '知识局',
+          feedId: '政治频道',
+          channelName: '知事局',
+          channelId: '1234567',
+          time: '2018-05-23 16:23'
         },
         {
-          name: "耍事台",
-          feedId: "政治频道",
-          channelName: "知事局",
-          channelId: "1234567",
-          time: "2018-05-23 16:23"
+          name: '耍事台',
+          feedId: '政治频道',
+          channelName: '知事局',
+          channelId: '1234567',
+          time: '2018-05-23 16:23'
         },
         {
-          name: "教务所",
-          feedId: "政治频道",
-          channelName: "知事局",
-          channelId: "1234567",
-          time: "2018-05-23 16:23"
+          name: '教务所',
+          feedId: '政治频道',
+          channelName: '知事局',
+          channelId: '1234567',
+          time: '2018-05-23 16:23'
         },
         {
-          name: "知识局",
-          feedId: "政治频道",
-          channelName: "知事局",
-          channelId: "1234567",
-          time: "2018-05-23 16:23"
+          name: '知识局',
+          feedId: '政治频道',
+          channelName: '知事局',
+          channelId: '1234567',
+          time: '2018-05-23 16:23'
         },
         {
-          name: "耍事台",
-          feedId: "政治频道",
-          channelName: "知事局",
-          channelId: "1234567",
-          time: "2018-05-23 16:23"
+          name: '耍事台',
+          feedId: '政治频道',
+          channelName: '知事局',
+          channelId: '1234567',
+          time: '2018-05-23 16:23'
         }
       ]
-    };
+    }
   },
   methods: {
-    handleClick(row) {
-      console.log(row);
+    handleClick (row) {
+      console.log(row)
     },
-    handleSizeChange(val) {
-      console.log(`每页 ${val} 条`);
+    handleSizeChange (val) {
+      console.log(`每页 ${val} 条`)
     },
-    handleCurrentChange(val) {
-      console.log(`当前页: ${val}`);
+    handleCurrentChange (val) {
+      console.log(`当前页: ${val}`)
     },
-    openDialog() {
-      this.dialogVisible = true;
+    openDialog () {
+      this.dialogVisible = true
     }
   }
-};
+}
 </script>
-

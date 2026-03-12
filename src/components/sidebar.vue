@@ -6,10 +6,10 @@
     </div>
     <el-row class="tac">
       <el-col>
-        <el-menu default-active="1" class="el-menu-vertical-demo" 
+        <el-menu default-active="1" class="el-menu-vertical-demo"
          @open="handleOpen"
-        @close="handleClose" 
-        background-color="#FDDB00" 
+        @close="handleClose"
+        background-color="#FDDB00"
         active-text-color="#333"
         text-color="#fff" style="border-right: none;">
           <el-menu-item index="1" class="index">
@@ -27,25 +27,25 @@
 </template>
 
 <script>
-  export default {
-    name: 'side-bar',
-    data() {
-      return {
-        activeIndex: '1'
-      }
-    },
-    created() {
+export default {
+  name: 'side-bar',
+  data () {
+    return {
+      activeIndex: '1'
+    }
+  },
+  created () {
 
+  },
+  methods: {
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
     },
-    methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      }
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
     }
   }
+}
 </script>
 
 <style lang="less" scoped>
@@ -71,4 +71,3 @@
     }
   }
 </style>
-

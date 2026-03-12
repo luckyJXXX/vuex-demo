@@ -19,45 +19,45 @@
 </template>
 
 <script>
-import Siderbar from "../../../components/sidebar";
-import Topheader from "../../../components/topheader";
-import Feed from "../feed/index.vue";
-import Channel from "../channel/index.vue";
+import Siderbar from '../../../components/sidebar.vue'
+import Topheader from '../../../components/topheader.vue'
+import Feed from '../feed/index.vue'
+import Channel from '../channel/index.vue'
 export default {
-  name: "feed",
+  name: 'feed',
   components: {
     Siderbar,
     Topheader,
     Feed,
     Channel
   },
-  data() {
+  data () {
     return {
       showFeed: true
     }
   },
   methods: {
-    
+
   }
-};
+}
 </script>
 
 <style lang="less" scoped>
   .el-header, .el-footer {
     line-height: 60px;
   }
-  
+
   .el-aside {
     background-color: 666666;
     color: #333;
     text-align: center;
   }
-  
+
   .el-main {
     background-color: #F6F6F6;
     color: #333;
   }
-  
+
   body > .el-container {
     margin-bottom: 40px;
   }
@@ -65,4 +65,3 @@ export default {
     height: 100%;
   }
 </style>
-
