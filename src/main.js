@@ -4,15 +4,15 @@ import './assets/style/common.less'
 import './assets/style/reset.less'
 import router from './router'
 import store from './store'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import Vconsole from 'vconsole'
 
 Vue.config.productionTip = false
-Vue.use(ElementUI);
+Vue.use(ElementUI)
 
 if (/sandbox.tiejin/.test(window.location.href) || /127.0.0.1/.test(window.location.href) || /10.3.0.333/.test(window.location.href)) {
-  const vconsole = new Vconsole()
+  window.vconsole = new Vconsole()
 }
 // 运行时动态设置
 // pageResize()
